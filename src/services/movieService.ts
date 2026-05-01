@@ -9,6 +9,8 @@ interface FetchMovieResponse {
 const token =
   import.meta.env.VITE_TMDB_TOKEN;
 
+  console.log(token);
+
 export async function fetchMovies(
   query: string
 ): Promise<Movie[]> {
